@@ -4,17 +4,22 @@ import (
 	"database/sql"
 	"strings"
 	"../log"
+	"../dialect"
+	"../schema"
 )
 
 type Session struct {
 	db *sql.DB
+	dialect dialect.Dialect
+	refTable *schema.Schema
 	sql strings.Builder
 	sqlVals []interface{}
 }
 
-func New(db *sql.DB) *Session {
+func New(db *sql.DB,dialect dialect.Dialect) *Session {
 	return &Session{
 		db: db,
+		dialect: dialect,
 	}
 }
 

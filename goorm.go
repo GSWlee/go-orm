@@ -3,11 +3,13 @@ package GO_ORM
 import (
 	"./log"
 	"./session"
+	"./dialect"
 	"database/sql"
 )
 
 type Engine struct {
 	db *sql.DB
+	dialect dialect.Dialect
 }
 
 func NewEngine(dirver string,source string) (e *Engine,err error) {
@@ -21,8 +23,14 @@ func NewEngine(dirver string,source string) (e *Engine,err error) {
 		log.Error(err)
 		return
 	}
+
+	dial,ok:=dialect.GetDialect(dirver)
+	if !ok{
+		log.Errorf("dialect %s Not Found",dirver)
+		return
+	}
 	log.Info("Connect database success")
-	e=&Engine{db: db}
+	e=&Engine{db: db,dialect: dial}
 	return
 }
 
@@ -34,5 +42,5 @@ func (e *Engine) Close()  {
 }
 
 func (e *Engine) NewSession() *session.Session {
-	return session.New(e.db)
+	return session.New(e.db,e.dialect)
 }
