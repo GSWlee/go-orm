@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="93d8ca85-c42d-4ff7-843d-332b19090278" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cmd_test/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goorm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/log.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session/raw.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="urls">
+      <list>
+        <option value="file://$PROJECT_DIR$" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rNxPEbgmQTH8G99zVI9WUTNssX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+  </component>
+  <component name="RunManager" selected="Go Build.go build main.go">
+    <configuration name="go build main.go " type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="GO_ORM" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/cmd_test/main.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GO_ORM" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build main.go " />
+      <item itemvalue="Go Build.go build main.go" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build main.go " />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="109" width="1071" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618837058640">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="109" width="1071" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1618837058640" />
+    <state x="1058" y="430" key="#com.intellij.ide.util.MemberChooser" timestamp="1618833545447">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1058" y="430" key="#com.intellij.ide.util.MemberChooser/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618833545447" />
+    <state width="2518" height="520" key="GridCell.Tab.0.bottom" timestamp="1618901252325">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.0.bottom/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618901252325" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1618838675646" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.25.1440.805@0.25.1440.805" timestamp="1618837476720" />
+    <state width="2518" height="520" key="GridCell.Tab.0.center" timestamp="1618901252323">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.0.center/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618901252323" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1618838675645" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.25.1440.805@0.25.1440.805" timestamp="1618837476717" />
+    <state width="2518" height="520" key="GridCell.Tab.0.left" timestamp="1618901252322">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.0.left/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618901252322" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1618838675644" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.25.1440.805@0.25.1440.805" timestamp="1618837476717" />
+    <state width="2518" height="520" key="GridCell.Tab.0.right" timestamp="1618901252324">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.0.right/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618901252324" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1618838675645" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.25.1440.805@0.25.1440.805" timestamp="1618837476719" />
+    <state width="2518" height="520" key="GridCell.Tab.1.bottom" timestamp="1618901253076">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.1.bottom/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618901253076" />
+    <state width="2518" height="520" key="GridCell.Tab.1.center" timestamp="1618901253069">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.1.center/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618901253069" />
+    <state width="2518" height="520" key="GridCell.Tab.1.left" timestamp="1618901253062">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.1.left/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618901253062" />
+    <state width="2518" height="520" key="GridCell.Tab.1.right" timestamp="1618901253073">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.1.right/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618901253073" />
+    <state width="228" height="457" key="HiddenNamespacesPopup" timestamp="1618831397569">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="228" height="457" key="HiddenNamespacesPopup/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618831397569" />
+    <state x="229" y="86" key="SettingsEditor" timestamp="1618838260961">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1618838260961" />
+  </component>
+</project>
