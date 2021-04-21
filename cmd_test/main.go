@@ -1,6 +1,5 @@
 package main
 
-
 import (
 	orm "../../GO_ORM"
 	"fmt"
@@ -11,6 +10,7 @@ func main() {
 	engine, _ := orm.NewEngine("sqlite3", "gee.db")
 	defer engine.Close()
 	s := engine.NewSession()
+
 	_, _ = s.Raw("DROP TABLE IF EXISTS User;").Exec()
 	_, _ = s.Raw("CREATE TABLE User(Name text);").Exec()
 	_, _ = s.Raw("CREATE TABLE User(Name text);").Exec()

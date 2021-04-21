@@ -1,17 +1,19 @@
 package session
 
 import (
+	"../clause"
+	"../dialect"
+	"../log"
+	"../schema"
 	"database/sql"
 	"strings"
-	"../log"
-	"../dialect"
-	"../schema"
 )
 
 type Session struct {
 	db *sql.DB
 	dialect dialect.Dialect
 	refTable *schema.Schema
+	clause clause.Clause
 	sql strings.Builder
 	sqlVals []interface{}
 }
@@ -26,6 +28,7 @@ func New(db *sql.DB,dialect dialect.Dialect) *Session {
 func (s *Session) Clear()  {
 	s.sql.Reset()
 	s.sqlVals=nil
+	s.clause=clause.Clause{}
 }
 
 func (s *Session) DB() *sql.DB {
@@ -54,7 +57,7 @@ func (s *Session) QueryRow() *sql.Row {
 	return s.DB().QueryRow(s.sql.String(),s.sqlVals...)
 }
 
-func (s Session) QueryRows() (rows *sql.Rows,err error){
+func (s *Session) QueryRows() (rows *sql.Rows,err error){
 	defer s.Clear()
 	log.Info(s.sql.String(),s.sqlVals)
 	if rows,err=s.DB().Query(s.sql.String(),s.sqlVals...);err!=nil{
@@ -62,3 +65,4 @@ func (s Session) QueryRows() (rows *sql.Rows,err error){
 	}
 	return
 }
+

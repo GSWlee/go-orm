@@ -11,14 +11,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93d8ca85-c42d-4ff7-843d-332b19090278" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dialect/dialect.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialect/sqlite3.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schema/schema.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schema/schema_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session/table.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clause/clause.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clause/generator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clause/generator_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session/raw_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session/record.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session/record_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goorm.go" beforeDir="false" afterPath="$PROJECT_DIR$/goorm.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd_test/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd_test/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee.db" beforeDir="false" afterPath="$PROJECT_DIR$/gee.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/schema.go" beforeDir="false" afterPath="$PROJECT_DIR$/schema/schema.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/session/raw.go" beforeDir="false" afterPath="$PROJECT_DIR$/session/raw.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session/table.go" beforeDir="false" afterPath="$PROJECT_DIR$/session/table.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +64,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
-  <component name="RunManager" selected="Go Test.go test ">
+  <component name="RunManager" selected="Go Test.TestSession_Find in GO_ORM">
     <configuration name="go build main.go " type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="GO_ORM" />
       <working_directory value="$PROJECT_DIR$" />
@@ -77,6 +81,44 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestSession_Find in GO_ORM" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="GO_ORM" />
+      <working_directory value="$PROJECT_DIR$/session" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/session/record_test.go" />
+      <pattern value="^\QTestSession_Find\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSession_Insert in record_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="GO_ORM" />
+      <working_directory value="$PROJECT_DIR$/session" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/session/record_test.go" />
+      <pattern value="^\QTestSession_Insert\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test " type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="GO_ORM" />
+      <working_directory value="$PROJECT_DIR$/schema" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/schema/schema_test.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test " type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="GO_ORM" />
+      <working_directory value="$PROJECT_DIR$/schema" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/schema/schema_test.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go test " type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="GO_ORM" />
       <working_directory value="$PROJECT_DIR$/session" />
@@ -88,34 +130,26 @@
     </configuration>
     <configuration name="go test " type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="GO_ORM" />
-      <working_directory value="$PROJECT_DIR$/schema" />
+      <working_directory value="$PROJECT_DIR$/clause" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/schema/schema_test.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go test " type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="GO_ORM" />
-      <working_directory value="$PROJECT_DIR$/schema" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/schema/schema_test.go" />
+      <filePath value="$PROJECT_DIR$/clause/generator_test.go" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Go Build.go build main.go " />
       <item itemvalue="Go Build.go build main.go" />
-      <item itemvalue="Go Test.go test " />
+      <item itemvalue="Go Test.TestSession_Find in GO_ORM" />
+      <item itemvalue="Go Test.TestSession_Insert in record_test.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestSession_Find in GO_ORM" />
+        <item itemvalue="Go Test.TestSession_Insert in record_test.go" />
         <item itemvalue="Go Test.go test " />
         <item itemvalue="Go Test.go test " />
         <item itemvalue="Go Test.go test " />
-        <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Build.go build main.go " />
       </list>
     </recent_temporary>
   </component>
@@ -135,40 +169,40 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="327" y="63" width="1904" height="1377" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618922474531">
+    <state x="260" y="181" width="1711" height="1229" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618991706068">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="327" y="63" width="1904" height="1377" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618922474531" />
+    <state x="260" y="181" width="1711" height="1229" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618991706068" />
     <state x="184" y="109" width="1071" height="755" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1618908773806" />
     <state x="1058" y="430" key="#com.intellij.ide.util.MemberChooser" timestamp="1618833545447">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1058" y="430" key="#com.intellij.ide.util.MemberChooser/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618833545447" />
-    <state width="1273" height="350" key="GridCell.Tab.0.bottom" timestamp="1618922950625">
+    <state width="1273" height="350" key="GridCell.Tab.0.bottom" timestamp="1618991686248">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1273" height="350" key="GridCell.Tab.0.bottom/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618922950625" />
+    <state width="1273" height="350" key="GridCell.Tab.0.bottom/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618991686248" />
     <state width="2518" height="350" key="GridCell.Tab.0.bottom/-1440.565.1440.875/0.0.2560.1440@0.0.2560.1440" timestamp="1618917676577" />
     <state width="1398" height="350" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1618912029604" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.25.1440.805@0.25.1440.805" timestamp="1618837476720" />
-    <state width="1273" height="350" key="GridCell.Tab.0.center" timestamp="1618922950623">
+    <state width="1273" height="350" key="GridCell.Tab.0.center" timestamp="1618991686247">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1273" height="350" key="GridCell.Tab.0.center/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618922950623" />
+    <state width="1273" height="350" key="GridCell.Tab.0.center/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618991686247" />
     <state width="2518" height="350" key="GridCell.Tab.0.center/-1440.565.1440.875/0.0.2560.1440@0.0.2560.1440" timestamp="1618917676575" />
     <state width="1398" height="350" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1618912029603" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.25.1440.805@0.25.1440.805" timestamp="1618837476717" />
-    <state width="1273" height="350" key="GridCell.Tab.0.left" timestamp="1618922950621">
+    <state width="1273" height="350" key="GridCell.Tab.0.left" timestamp="1618991686246">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1273" height="350" key="GridCell.Tab.0.left/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618922950621" />
+    <state width="1273" height="350" key="GridCell.Tab.0.left/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618991686246" />
     <state width="2518" height="350" key="GridCell.Tab.0.left/-1440.565.1440.875/0.0.2560.1440@0.0.2560.1440" timestamp="1618917676571" />
     <state width="1398" height="350" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1618912029602" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.25.1440.805@0.25.1440.805" timestamp="1618837476717" />
-    <state width="1273" height="350" key="GridCell.Tab.0.right" timestamp="1618922950624">
+    <state width="1273" height="350" key="GridCell.Tab.0.right" timestamp="1618991686248">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1273" height="350" key="GridCell.Tab.0.right/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618922950624" />
+    <state width="1273" height="350" key="GridCell.Tab.0.right/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618991686248" />
     <state width="2518" height="350" key="GridCell.Tab.0.right/-1440.565.1440.875/0.0.2560.1440@0.0.2560.1440" timestamp="1618917676576" />
     <state width="1398" height="350" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1618912029603" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.25.1440.805@0.25.1440.805" timestamp="1618837476719" />
@@ -200,8 +234,17 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1618838260961" />
+    <state x="35" y="736" width="670" height="676" key="search.everywhere.popup" timestamp="1618979933459">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="35" y="736" width="670" height="676" key="search.everywhere.popup/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618979933459" />
+    <state x="387" y="636" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1618990123867">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="387" y="636" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1618990123867" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GO_ORM$generator_test_go.out" NAME="generator_test.go Coverage Results" MODIFIED="1618985367924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/GO_ORM$table_test_go.out" NAME="table_test.go Coverage Results" MODIFIED="1618922453949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/GO_ORM$schema_test_go.out" NAME="schema_test.go Coverage Results" MODIFIED="1618917435407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
