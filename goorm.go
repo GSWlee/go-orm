@@ -1,4 +1,4 @@
-package GO_ORM
+package main
 
 import (
 	"./log"
